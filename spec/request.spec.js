@@ -33,7 +33,7 @@ describe('Request', function() {
             createRequest({
                 server: 'http://www.acme.com',
                 apiVersion: 'v3.0'
-            }).wsapiUrl.should.eql('http://www.acme.com/slm/webservice/v3.0')
+            }).wsapiUrl.should.eql('http://www.acme.com/webservice/v3.0')
         });
 
         it('should pass request options through', function() {

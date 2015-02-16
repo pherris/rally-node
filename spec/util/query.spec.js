@@ -18,8 +18,8 @@ describe('Query', function() {
         });
 
         it('should handle a ref value', function() {
-            queryUtils.where('Iteration', '=', 'https://rally1.rallydev.com/slm/webservice/v2.0/iteration/12345').toQueryString().should.eql('(Iteration = /iteration/12345)');
-            queryUtils.where('Iteration', '=', {_ref: 'https://rally1.rallydev.com/slm/webservice/v2.0/iteration/12345'}).toQueryString().should.eql('(Iteration = /iteration/12345)');
+            queryUtils.where('Iteration', '=', 'https://rally1.rallydev.com/webservice/v2.0/iteration/12345').toQueryString().should.eql('(Iteration = /iteration/12345)');
+            queryUtils.where('Iteration', '=', {_ref: 'https://rally1.rallydev.com/webservice/v2.0/iteration/12345'}).toQueryString().should.eql('(Iteration = /iteration/12345)');
         });
 
         it('should handle a value with spaces', function() {
